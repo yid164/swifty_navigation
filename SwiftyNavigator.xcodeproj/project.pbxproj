@@ -11,6 +11,9 @@
 		DA02D5FA27E5579300AAECDE /* SwiftyNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA02D5EF27E5579300AAECDE /* SwiftyNavigator.framework */; };
 		DA02D5FF27E5579300AAECDE /* SwiftyNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D5FE27E5579300AAECDE /* SwiftyNavigatorTests.swift */; };
 		DA02D60027E5579300AAECDE /* SwiftyNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = DA02D5F227E5579300AAECDE /* SwiftyNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA02D63227E55C9E00AAECDE /* SwiftyAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D63127E55C9E00AAECDE /* SwiftyAlert.swift */; };
+		DA02D63427E55CE200AAECDE /* SwiftySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D63327E55CE200AAECDE /* SwiftySheet.swift */; };
+		DA02D63627E55E1100AAECDE /* SwiftyNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D63527E55E1100AAECDE /* SwiftyNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,6 +24,13 @@
 			remoteGlobalIDString = DA02D5EE27E5579300AAECDE;
 			remoteInfo = SwiftyNavigator;
 		};
+		DA02D62727E55BD900AAECDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA02D62327E55BD900AAECDE /* Examples.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA02D61227E55BD800AAECDE;
+			remoteInfo = Examples;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +39,10 @@
 		DA02D5F327E5579300AAECDE /* SwiftyNavigator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyNavigator.docc; sourceTree = "<group>"; };
 		DA02D5F927E5579300AAECDE /* SwiftyNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA02D5FE27E5579300AAECDE /* SwiftyNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigatorTests.swift; sourceTree = "<group>"; };
+		DA02D62327E55BD900AAECDE /* Examples.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Examples.xcodeproj; path = Examples/Examples.xcodeproj; sourceTree = "<group>"; };
+		DA02D63127E55C9E00AAECDE /* SwiftyAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAlert.swift; sourceTree = "<group>"; };
+		DA02D63327E55CE200AAECDE /* SwiftySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySheet.swift; sourceTree = "<group>"; };
+		DA02D63527E55E1100AAECDE /* SwiftyNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,7 @@
 		DA02D5E527E5579300AAECDE = {
 			isa = PBXGroup;
 			children = (
+				DA02D62327E55BD900AAECDE /* Examples.xcodeproj */,
 				DA02D5F127E5579300AAECDE /* SwiftyNavigator */,
 				DA02D5FD27E5579300AAECDE /* SwiftyNavigatorTests */,
 				DA02D5F027E5579300AAECDE /* Products */,
@@ -71,6 +86,7 @@
 		DA02D5F127E5579300AAECDE /* SwiftyNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				DA02D62E27E55C4B00AAECDE /* main */,
 				DA02D5F227E5579300AAECDE /* SwiftyNavigator.h */,
 				DA02D5F327E5579300AAECDE /* SwiftyNavigator.docc */,
 			);
@@ -83,6 +99,24 @@
 				DA02D5FE27E5579300AAECDE /* SwiftyNavigatorTests.swift */,
 			);
 			path = SwiftyNavigatorTests;
+			sourceTree = "<group>";
+		};
+		DA02D62427E55BD900AAECDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA02D62827E55BD900AAECDE /* Examples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA02D62E27E55C4B00AAECDE /* main */ = {
+			isa = PBXGroup;
+			children = (
+				DA02D63127E55C9E00AAECDE /* SwiftyAlert.swift */,
+				DA02D63327E55CE200AAECDE /* SwiftySheet.swift */,
+				DA02D63527E55E1100AAECDE /* SwiftyNavigation.swift */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +198,12 @@
 			mainGroup = DA02D5E527E5579300AAECDE;
 			productRefGroup = DA02D5F027E5579300AAECDE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA02D62427E55BD900AAECDE /* Products */;
+					ProjectRef = DA02D62327E55BD900AAECDE /* Examples.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DA02D5EE27E5579300AAECDE /* SwiftyNavigator */,
@@ -171,6 +211,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA02D62827E55BD900AAECDE /* Examples.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Examples.app;
+			remoteRef = DA02D62727E55BD900AAECDE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DA02D5ED27E5579300AAECDE /* Resources */ = {
@@ -194,7 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA02D63227E55C9E00AAECDE /* SwiftyAlert.swift in Sources */,
 				DA02D5F427E5579300AAECDE /* SwiftyNavigator.docc in Sources */,
+				DA02D63627E55E1100AAECDE /* SwiftyNavigation.swift in Sources */,
+				DA02D63427E55CE200AAECDE /* SwiftySheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +403,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ken.SwiftyNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,6 +433,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,6 +443,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ken.SwiftyNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -396,6 +453,7 @@
 		DA02D60727E5579300AAECDE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTYP9QNGLH;
@@ -412,6 +470,7 @@
 		DA02D60827E5579300AAECDE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GTYP9QNGLH;

@@ -11,7 +11,23 @@
 		DA02D61827E55BD800AAECDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D61727E55BD800AAECDE /* ContentView.swift */; };
 		DA02D61A27E55BD900AAECDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA02D61927E55BD900AAECDE /* Assets.xcassets */; };
 		DA02D61D27E55BD900AAECDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA02D61C27E55BD900AAECDE /* Preview Assets.xcassets */; };
+		DA02D62B27E55C1600AAECDE /* SwiftyNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA02D62A27E55C1600AAECDE /* SwiftyNavigator.framework */; };
+		DA02D62C27E55C1600AAECDE /* SwiftyNavigator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA02D62A27E55C1600AAECDE /* SwiftyNavigator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA02D62D27E55C1600AAECDE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA02D62C27E55C1600AAECDE /* SwiftyNavigator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DA02D61227E55BD800AAECDE /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +35,7 @@
 		DA02D61727E55BD800AAECDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA02D61927E55BD900AAECDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA02D61C27E55BD900AAECDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA02D62A27E55C1600AAECDE /* SwiftyNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA02D62B27E55C1600AAECDE /* SwiftyNavigator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +55,7 @@
 			children = (
 				DA02D61427E55BD800AAECDE /* Examples */,
 				DA02D61327E55BD800AAECDE /* Products */,
+				DA02D62927E55C1600AAECDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DA02D62927E55C1600AAECDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA02D62A27E55C1600AAECDE /* SwiftyNavigator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				DA02D60E27E55BD800AAECDE /* Sources */,
 				DA02D60F27E55BD800AAECDE /* Frameworks */,
 				DA02D61027E55BD800AAECDE /* Resources */,
+				DA02D62D27E55C1600AAECDE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,7 +223,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

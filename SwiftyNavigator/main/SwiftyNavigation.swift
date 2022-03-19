@@ -1,5 +1,5 @@
 //
-//  SwifyNavigation.swift
+//  SwiftyNavigation.swift
 //  SwiftyNavigator
 //
 //  Created by Yinsheng Dong on 2022-03-18.
@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-public struct SwifyNavigation<Content: View>: View {
+public struct SwiftyNavigation<Content: View>: View {
     let content: () -> Content
     
     @EnvironmentObject public var manager: SwiftyNavigationManager
+    @Environment(\.presentationMode) var presentationMode
     
     public var body: some View {
         NavigationView {
@@ -20,10 +21,16 @@ public struct SwifyNavigation<Content: View>: View {
                 }
                 content()
             }
+            .onReceive(manager.$isDismiss) { isDismiss in
+                if isDismiss {
+                    presentationMode.wrappedValue.dismiss()
+                    manager.isDismiss = false
+                }
+            }
         }
     }
     
-    public init(_ content: @escaping () -> Content) {
+    public init(@ViewBuilder content: @escaping () -> Content) {
         self.content = content
     }
 }
@@ -33,6 +40,8 @@ public class SwiftyNavigationManager: ObservableObject {
     @Published var isPresented: Bool = false
     
     @Published var destination: () -> AnyView
+    
+    @Published var isDismiss: Bool = false
 
     
     public func navigate<Content: View>(@ViewBuilder des: () -> Content) {
@@ -45,6 +54,11 @@ public class SwiftyNavigationManager: ObservableObject {
         self.isPresented = true
         let desn = des
         self.destination = { desn.wrappToAnyView }
+    }
+    
+    public func dismiss() {
+        self.isDismiss = true
+        self.isPresented = false
     }
     
     public init() {

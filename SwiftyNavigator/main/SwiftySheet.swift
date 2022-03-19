@@ -13,8 +13,8 @@ struct SwiftySheet: View {
     }
 }
 
-struct SwiftySheet_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftySheet()
-    }
-}
+//struct SwiftySheet_Previews: PreviewProvider {
+//    static var previews: some View {
+//        SwiftySheet()
+//    }
+//}
