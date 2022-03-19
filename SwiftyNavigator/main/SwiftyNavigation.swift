@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+@available(iOS 14, *)
+@available(macOS 10.15, *)
 public struct SwiftyNavigation<Content: View>: View {
     let content: () -> Content
     
@@ -35,6 +37,8 @@ public struct SwiftyNavigation<Content: View>: View {
     }
 }
 
+@available(macOS 10.15, *)
+@available(iOS 14, *)
 public class SwiftyNavigationManager: ObservableObject {
     
     @Published var isPresented: Bool = false
@@ -66,6 +70,8 @@ public class SwiftyNavigationManager: ObservableObject {
     }
 }
 
+@available(macOS 10.15, *)
+@available(iOS 14, *)
 extension View {
     var wrappToAnyView: AnyView {
         AnyView(self)

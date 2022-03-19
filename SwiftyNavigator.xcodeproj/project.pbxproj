@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA02D5F427E5579300AAECDE /* SwiftyNavigator.docc in Sources */ = {isa = PBXBuildFile; fileRef = DA02D5F327E5579300AAECDE /* SwiftyNavigator.docc */; };
 		DA02D5FA27E5579300AAECDE /* SwiftyNavigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA02D5EF27E5579300AAECDE /* SwiftyNavigator.framework */; };
 		DA02D5FF27E5579300AAECDE /* SwiftyNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D5FE27E5579300AAECDE /* SwiftyNavigatorTests.swift */; };
 		DA02D60027E5579300AAECDE /* SwiftyNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = DA02D5F227E5579300AAECDE /* SwiftyNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,13 +35,13 @@
 /* Begin PBXFileReference section */
 		DA02D5EF27E5579300AAECDE /* SwiftyNavigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyNavigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA02D5F227E5579300AAECDE /* SwiftyNavigator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyNavigator.h; sourceTree = "<group>"; };
-		DA02D5F327E5579300AAECDE /* SwiftyNavigator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyNavigator.docc; sourceTree = "<group>"; };
 		DA02D5F927E5579300AAECDE /* SwiftyNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA02D5FE27E5579300AAECDE /* SwiftyNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigatorTests.swift; sourceTree = "<group>"; };
 		DA02D62327E55BD900AAECDE /* Examples.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Examples.xcodeproj; path = Examples/Examples.xcodeproj; sourceTree = "<group>"; };
 		DA02D63127E55C9E00AAECDE /* SwiftyAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyAlert.swift; sourceTree = "<group>"; };
 		DA02D63327E55CE200AAECDE /* SwiftySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySheet.swift; sourceTree = "<group>"; };
 		DA02D63527E55E1100AAECDE /* SwiftyNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigation.swift; sourceTree = "<group>"; };
+		DA5EA1AB27E5AEE800A23B96 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +66,7 @@
 		DA02D5E527E5579300AAECDE = {
 			isa = PBXGroup;
 			children = (
+				DA5EA1AB27E5AEE800A23B96 /* Package.swift */,
 				DA02D62327E55BD900AAECDE /* Examples.xcodeproj */,
 				DA02D5F127E5579300AAECDE /* SwiftyNavigator */,
 				DA02D5FD27E5579300AAECDE /* SwiftyNavigatorTests */,
@@ -88,7 +88,6 @@
 			children = (
 				DA02D62E27E55C4B00AAECDE /* main */,
 				DA02D5F227E5579300AAECDE /* SwiftyNavigator.h */,
-				DA02D5F327E5579300AAECDE /* SwiftyNavigator.docc */,
 			);
 			path = SwiftyNavigator;
 			sourceTree = "<group>";
@@ -245,7 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA02D63227E55C9E00AAECDE /* SwiftyAlert.swift in Sources */,
-				DA02D5F427E5579300AAECDE /* SwiftyNavigator.docc in Sources */,
 				DA02D63627E55E1100AAECDE /* SwiftyNavigation.swift in Sources */,
 				DA02D63427E55CE200AAECDE /* SwiftySheet.swift in Sources */,
 			);
