@@ -13,6 +13,9 @@
 		DA02D63227E55C9E00AAECDE /* SwiftyAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D63127E55C9E00AAECDE /* SwiftyAlert.swift */; };
 		DA02D63427E55CE200AAECDE /* SwiftySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D63327E55CE200AAECDE /* SwiftySheet.swift */; };
 		DA02D63627E55E1100AAECDE /* SwiftyNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA02D63527E55E1100AAECDE /* SwiftyNavigation.swift */; };
+		DABC7BAC27E676F4003D0D4E /* SwiftyNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC7BAB27E676F4003D0D4E /* SwiftyNavigationManager.swift */; };
+		DABC7BAE27E67766003D0D4E /* SwiftyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC7BAD27E67766003D0D4E /* SwiftyView.swift */; };
+		DABC7BB027E67F43003D0D4E /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC7BAF27E67F43003D0D4E /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		DA02D63327E55CE200AAECDE /* SwiftySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySheet.swift; sourceTree = "<group>"; };
 		DA02D63527E55E1100AAECDE /* SwiftyNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigation.swift; sourceTree = "<group>"; };
 		DA5EA1AB27E5AEE800A23B96 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		DABC7BAB27E676F4003D0D4E /* SwiftyNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNavigationManager.swift; sourceTree = "<group>"; };
+		DABC7BAD27E67766003D0D4E /* SwiftyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyView.swift; sourceTree = "<group>"; };
+		DABC7BAF27E67F43003D0D4E /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 		DA02D5F127E5579300AAECDE /* SwiftyNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				DABC7BAA27E676D6003D0D4E /* models */,
+				DABC7BA827E676A6003D0D4E /* views */,
 				DA02D62E27E55C4B00AAECDE /* main */,
 				DA02D5F227E5579300AAECDE /* SwiftyNavigator.h */,
 			);
@@ -111,11 +119,28 @@
 		DA02D62E27E55C4B00AAECDE /* main */ = {
 			isa = PBXGroup;
 			children = (
-				DA02D63127E55C9E00AAECDE /* SwiftyAlert.swift */,
-				DA02D63327E55CE200AAECDE /* SwiftySheet.swift */,
 				DA02D63527E55E1100AAECDE /* SwiftyNavigation.swift */,
 			);
 			path = main;
+			sourceTree = "<group>";
+		};
+		DABC7BA827E676A6003D0D4E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				DA02D63127E55C9E00AAECDE /* SwiftyAlert.swift */,
+				DA02D63327E55CE200AAECDE /* SwiftySheet.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DABC7BAA27E676D6003D0D4E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DABC7BAB27E676F4003D0D4E /* SwiftyNavigationManager.swift */,
+				DABC7BAD27E67766003D0D4E /* SwiftyView.swift */,
+				DABC7BAF27E67F43003D0D4E /* LinkedList.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABC7BB027E67F43003D0D4E /* LinkedList.swift in Sources */,
 				DA02D63227E55C9E00AAECDE /* SwiftyAlert.swift in Sources */,
+				DABC7BAE27E67766003D0D4E /* SwiftyView.swift in Sources */,
+				DABC7BAC27E676F4003D0D4E /* SwiftyNavigationManager.swift in Sources */,
 				DA02D63627E55E1100AAECDE /* SwiftyNavigation.swift in Sources */,
 				DA02D63427E55CE200AAECDE /* SwiftySheet.swift in Sources */,
 			);
